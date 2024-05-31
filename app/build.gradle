@@ -29,15 +29,26 @@ android {
 }
 
 dependencies {
+    def room_version = "2.6.1"
 
     implementation libs.appcompat
     implementation libs.material
     implementation libs.activity
     implementation libs.constraintlayout
-    implementation 'org.projectlombok:lombok:1.18.32'
+    implementation libs.projectlombok.lombok
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
-    annotationProcessor 'org.projectlombok:lombok:1.18.32'
-    implementation 'com.squareup.retrofit2:retrofit:'
+    annotationProcessor libs.projectlombok.lombok
+    implementation libs.retrofit
+
+    implementation libs.room.runtime
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
+    implementation libs.room.rxjava2
+    implementation libs.room.rxjava3
+    implementation libs.room.guava
+    testImplementation libs.room.testing
+    implementation libs.room.paging
+    implementation libs.volley
 }

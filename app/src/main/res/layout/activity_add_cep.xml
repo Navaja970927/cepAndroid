@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCepActivity">
+
+
+    <LinearLayout
+        android:id="@+id/cepInputRow"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/cepText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CEP"></EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnSearchRow"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/cepInputRow">
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:text="Search"></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cepRow"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/btnSearchRow">
+
+        <TextView
+            android:id="@+id/cepLabel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="CEP:" />
+
+        <TextView
+            android:id="@+id/cepValue"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/logadouroRow"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/cepRow">
+
+        <TextView
+            android:id="@+id/logadouroLabel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Logadouro:" />
+
+        <TextView
+            android:id="@+id/logadouroValue"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/complementoRow"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/logadouroRow">
+
+        <TextView
+            android:id="@+id/complementoLabel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Complemento:" />
+
+        <TextView
+            android:id="@+id/complementoValue"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bairroRow"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/complementoRow">
+
+        <TextView
+            android:id="@+id/bairroLabel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Bairro:" />
+
+        <TextView
+            android:id="@+id/bairroValue"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/localidadeRow"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/bairroRow">
+
+        <TextView
+            android:id="@+id/localidadeLabel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Localidade:" />
+
+        <TextView
+            android:id="@+id/localidadeValue"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ufRow"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/localidadeRow">
+
+        <TextView
+            android:id="@+id/ufLabel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="UF:" />
+
+        <TextView
+            android:id="@+id/ufValue"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ibgeRow"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/ufRow">
+
+        <TextView
+            android:id="@+id/ibgeLabel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Ibge:" />
+
+        <TextView
+            android:id="@+id/ibgeValue"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/giaRow"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/ibgeRow">
+
+        <TextView
+            android:id="@+id/giaLabel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Gia:"/>
+
+        <TextView
+            android:id="@+id/giaValue"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dddRow"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/giaRow">
+
+    <TextView
+        android:id="@+id/dddLabel"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Ddd:"/>
+
+    <TextView
+        android:id="@+id/dddValue"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/siafiRow"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/dddRow">
+
+    <TextView
+        android:id="@+id/siafiLabel"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Siafi:"/>
+
+    <TextView
+        android:id="@+id/siafiValue"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnSaveRow"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/siafiRow">
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="Save"></Button>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
